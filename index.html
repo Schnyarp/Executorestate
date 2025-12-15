@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Executor.estate — Premium Domain For Sale</title>
+  <meta name="description" content="Executor.estate — premium domain ideal for estate administration, probate services, executor tools, estate planning platforms and legal marketplaces. Submit an offer to purchase." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://executor.estate/" />
+  <meta name="theme-color" content="#243342" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Executor.estate — Premium Domain For Sale" />
+  <meta property="og:description" content="Executor.estate — brandable domain for probate & estate administration platforms, executor tools, legal services and trust portals. Contact domain@executor.estate" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://executor.estate/" />
+  <meta property="og:image" content="https://executor.estate/og-image.png" />
+
+  <link rel="icon" href="/favicon.ico" />
+
+  <style>
+    :root{
+      --max-w:1120px;
+      /* Look: "Estate Ledger" — navy, parchment, gold */
+      --bg-1:#f8f6f2;
+      --bg-2:#eef4f6;
+      --panel:#ffffff;
+      --ink:#18323a;     /* deep teal/ink */
+      --muted:#6f8b8d;
+      --brand:#243342;   /* navy ledger */
+      --accent:#caa84a;  /* warm gold accent */
+      --soft:#fbfaf8;
+      --radius:16px;
+      --shadow: 0 30px 90px rgba(10,20,20,0.06);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      min-height:100vh;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:40px 20px;
+      background:
+        radial-gradient(700px 260px at 12% 8%, rgba(202,168,74,0.03), transparent 12%),
+        linear-gradient(180deg,var(--bg-1) 0%, var(--bg-2) 100%);
+      color:var(--ink);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+
+    .bg { position:fixed; inset:0; z-index:0; pointer-events:none; overflow:visible; }
+    .ledger-band{
+      position:fixed; left:50%; top:8%; transform:translateX(-50%);
+      width:1100px; height:300px; z-index:0; border-radius:18px;
+      pointer-events:none;
+      background:
+        linear-gradient(180deg, rgba(202,168,74,0.02), rgba(255,255,255,0.02)),
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1100 300'><g stroke='%23000000' stroke-opacity='0.02' fill='none'><path d='M40 160c140-80 300-60 480-30 160 26 280-6 420 30'/><circle cx='240' cy='120' r='18'/></g></svg>");
+      background-repeat:repeat-x;
+      background-size:420px 140px;
+      mix-blend-mode:screen;
+      opacity:0.95;
+      box-shadow: inset 0 18px 44px rgba(0,0,0,0.02);
+    }
+
+    .tokens { position:fixed; inset:0; z-index:0; pointer-events:none; overflow:visible; }
+    .token { position:absolute; width:84px; height:84px; background-size:contain; background-repeat:no-repeat; opacity:0.07; filter: drop-shadow(0 12px 30px rgba(0,0,0,0.06)); }
+    @keyframes floaty { 0%{transform:translateY(0) rotate(-6deg)} 50%{transform:translateY(-14px) rotate(6deg)} 100%{transform:translateY(0) rotate(-6deg)} }
+
+    .container{
+      width:100%; max-width:var(--max-w);
+      padding:36px; border-radius:18px;
+      background:linear-gradient(180deg,var(--panel),var(--soft));
+      box-shadow:var(--shadow);
+      border:1px solid rgba(12,30,30,0.03);
+      position:relative; z-index:2;
+    }
+
+    header{ display:flex; gap:18px; align-items:center; justify-content:space-between; margin-bottom:12px; }
+    .brand{ display:flex; gap:14px; align-items:center; }
+    .logo{
+      width:92px;height:92px;border-radius:14px;
+      background:linear-gradient(135deg,var(--brand), #4a6b6e);
+      color:#fff; display:flex; align-items:center; justify-content:center;
+      font-weight:900; font-size:20px; flex-shrink:0;
+    }
+    h1{ margin:0; font-size:26px; color:var(--brand); }
+    p.lead{ margin:6px 0 0; color:var(--muted); font-size:14px; max-width:780px; }
+
+    .grid { display:grid; grid-template-columns: 1fr 380px; gap:26px; align-items:start; margin-top:18px; }
+
+    .hero {
+      padding:22px; border-radius:14px; color:var(--brand);
+      background:linear-gradient(180deg, rgba(36,51,66,0.02), rgba(202,168,74,0.01));
+      border:1px solid rgba(36,51,66,0.03);
+      display:flex; gap:18px; align-items:center; justify-content:space-between;
+    }
+    .hero h2{ margin:0 0 8px 0; font-size:20px; color:var(--brand); }
+    .hero p{ margin:0; color:var(--muted); }
+
+    .panel{ background:#fff; color:#042826; padding:20px; border-radius:12px; box-shadow:0 10px 34px rgba(2,8,12,0.06); border:1px solid rgba(2,8,12,0.03); }
+
+    h2.section{ margin-top:0; font-size:18px; color:var(--brand); }
+    .features ul{ margin:0; padding-left:18px; color:#234a52; }
+    .features li{ margin-bottom:10px; }
+
+    .samples{ display:flex; gap:12px; margin-top:12px; flex-wrap:wrap; }
+    .sample { min-width:140px; padding:12px; border-radius:12px; background:#f7fffd; border:1px solid rgba(2,8,12,0.04); color:#234a52; font-weight:700; text-align:center; }
+
+    .cta-row{ display:flex; gap:12px; margin-top:14px; flex-wrap:wrap; }
+    .btn{ display:inline-flex; gap:10px; align-items:center; padding:10px 14px; border-radius:999px; font-weight:800; cursor:pointer; text-decoration:none; color:#042826; }
+    .btn-primary{ background:linear-gradient(90deg,var(--accent), var(--brand)); color:#042826; }
+    .btn-ghost{ background:transparent; border:1px solid rgba(2,8,12,0.04); color:var(--muted); }
+
+    .contact-card{ position:sticky; top:28px; background:linear-gradient(180deg,#ffffff,#fbfffe); padding:18px; border-radius:12px; border:1px solid rgba(2,8,12,0.03); box-shadow:0 8px 26px rgba(2,8,12,0.05); max-width:380px; color:#042826; }
+
+    label{ display:block; font-size:13px; color:var(--muted); margin-bottom:6px; }
+    input, textarea, select {
+      width:100%; padding:10px 12px; border-radius:8px; border:1px solid rgba(2,8,12,0.06); margin-bottom:12px; font-size:14px; color:#042826; background:#fff;
+    }
+    textarea{ min-height:110px; resize:vertical; }
+
+    footer{ margin-top:18px; color:var(--muted); font-size:13px; text-align:center; }
+
+    .ticker {
+      position:fixed; left:50%; bottom:18px; transform:translateX(-50%);
+      width:92%; max-width:1200px; z-index:1;
+      background:linear-gradient(90deg, rgba(202,168,74,0.02), rgba(36,51,66,0.01));
+      border-radius:12px; padding:8px 12px; box-shadow:0 8px 36px rgba(2,8,12,0.12);
+      font-weight:700; color:var(--muted); display:flex; gap:18px; overflow:hidden; white-space:nowrap;
+    }
+    .ticker span{ display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px; background:rgba(255,255,255,0.02); color:var(--brand); }
+
+    @media (max-width:980px){
+      .grid{ grid-template-columns:1fr; gap:18px; }
+      .ledger-band, .tokens { display:none; }
+      .container{ padding:24px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "url":"https://executor.estate",
+        "name":"Executor.estate",
+        "description":"Executor.estate — premium domain for probate, estate administration tools, executor services and legal marketplaces."
+      },
+      {
+        "@type":"Organization",
+        "name":"Executor.estate",
+        "url":"https://executor.estate",
+        "contactPoint":[
+          {
+            "@type":"ContactPoint",
+            "contactType":"sales",
+            "email":"domain@executor.estate"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="ledger-band" aria-hidden="true"></div>
+    <div class="tokens" id="tokens" aria-hidden="true"></div>
+  </div>
+
+  <main class="container" role="main" aria-labelledby="main-heading">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">EE</div>
+        <div>
+          <h1 id="main-heading">Executor.estate</h1>
+          <p class="lead">Premium domain for probate & estate administration platforms, executor tools, legal services and trust portals.</p>
+        </div>
+      </div>
+
+      <div style="text-align:right">
+        <div style="color:var(--muted);font-size:13px">For inquiries</div>
+        <div style="font-weight:800;color:var(--accent)"><a href="mailto:domain@executor.estate" style="color:inherit; text-decoration:none">domain@executor.estate</a></div>
+      </div>
+    </header>
+
+    <section class="grid" aria-label="Main content">
+      <div>
+        <div class="hero" role="note" aria-live="polite" aria-labelledby="hero-title">
+          <div>
+            <h2 id="hero-title">A direct, trust-first name for estate services</h2>
+            <p>Executor.estate is clear and authoritative — ideal for services and platforms that help executors, probate attorneys, estate administrators and fiduciaries.</p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#" id="inquireBtn">Make an Offer</a>
+              <a class="btn btn-ghost" href="mailto:domain@executor.estate?subject=Domain%20Offer%20-%20Executor.estate">Email Now</a>
+            </div>
+          </div>
+
+          <div style="min-width:220px; text-align:center">
+            <div style="color:var(--muted); font-size:13px">Domain</div>
+            <div style="font-weight:900; font-size:18px; margin-top:6px; color:var(--brand)">Executor.estate</div>
+            <div style="color:var(--muted); font-size:13px; margin-top:8px">Serious offers only.</div>
+          </div>
+        </div>
+
+        <article class="panel" aria-labelledby="why-title" style="margin-top:18px">
+          <h2 id="why-title" class="section">Why Executor.estate?</h2>
+          <p>Category-first and authoritative — this domain is well-suited for probate platforms, executor tools, trust portals, fiduciary services and legal marketplaces.</p>
+
+          <div class="features" style="margin-top:12px">
+            <ul>
+              <li>Strong category signal — relevant to executors, attorneys and families</li>
+              <li>Fits B2B and B2C estate workflows: probate, administration, trust management</li>
+              <li>Brandable across web, portals, email and partner integrations</li>
+            </ul>
+          </div>
+
+          <div class="samples" aria-hidden="false">
+            <div class="sample">Executor Tools & Guides</div>
+            <div class="sample">Probate & Estate Marketplaces</div>
+            <div class="sample">Trust & Fiduciary Platforms</div>
+            <div class="sample">Legal Resource & Referral</div>
+          </div>
+        </article>
+
+        <article class="panel" style="margin-top:18px" aria-labelledby="about-title">
+          <h3 id="about-title" style="margin-top:0">About this domain</h3>
+          <p>Executor.estate is a premium domain available for transfer.</p>
+
+          <ul style="color:#234a52;margin-top:12px">
+            <li>Well-suited to legal tech founders, probate services, fiduciaries and marketplace teams</li>
+            <li>Useful for integrations with data providers, escrow, payment processors and scheduling</li>
+            <li>We use escrow to ensure a smooth, secure transfer for both buyer and seller</li>
+          </ul>
+
+          <div style="margin-top:12px; font-size:13px; color:#234a52; border-top:1px dashed rgba(2,8,12,0.06); padding-top:12px">
+            Helpful resource: <a href="https://corelli.com/domains.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">How To Choose A Domain Name</a>
+          </div>
+        </article>
+      </div>
+
+      <aside class="contact-card" aria-label="Contact & offer">
+        <div>
+          <h3 style="margin-top:0">Contact & Offer</h3>
+          <p style="margin-top:6px;color:#234a52">Submit an offer — the form below opens your email client with the details prefilled. Or email <a href="mailto:domain@executor.estate" style="color:var(--accent)">domain@executor.estate</a>.</p>
+
+          <form id="inquiryForm" onsubmit="handleSubmit(event)" aria-label="Domain offer form" style="margin-top:12px">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+            <label for="offer">Your offer (USD)</label>
+            <input id="offer" name="offer" type="text" placeholder="Enter your offer (USD)" required />
+
+            <label for="company">Company (optional)</label>
+            <input id="company" name="company" type="text" placeholder="Your company or organization" />
+
+            <label for="country">Country</label>
+            <input id="country" name="country" type="text" placeholder="Your country" required />
+
+            <label for="phone">Phone number (optional)</label>
+            <input id="phone" name="phone" type="tel" />
+
+            <label for="message">Message (questions, timeline, escrow preference)</label>
+            <textarea id="message" name="message" placeholder="Hi — I'm submitting an offer for Executor.estate. Please share transfer instructions and next steps."></textarea>
+
+            <button class="btn btn-primary" type="submit" style="width:100%; margin-top:6px">Send Offer</button>
+          </form>
+
+          <footer style="margin-top:10px; text-align:left; color:#234a52; font-size:13px">
+            Prefer direct email? <a href="mailto:domain@executor.estate" style="color:var(--accent)">domain@executor.estate</a>
+          </footer>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <div style="margin-bottom:6px; color:var(--muted); font-size:13px">
+        Privacy: Contact details submitted by email or via the form are used only to respond to your inquiry and to facilitate the domain transfer. We use escrow to ensure a smooth, secure transfer for both buyer and seller.
+      </div>
+      &copy; 2025 Executor.estate. All rights reserved.
+    </footer>
+  </main>
+
+  <div class="ticker" aria-hidden="true" id="ticker">
+    <span>▲ Probate  +resource</span>
+    <span>▲ Estate Admin  +tools</span>
+    <span>▲ Fiduciary  +trusted</span>
+    <span>▲ Trusts  +insight</span>
+    <span>▲ Executor Help  +guide</span>
+  </div>
+
+  <script>
+    // tokens: scale, document, key, gavel (inline SVG data URIs)
+    (function placeTokens(){
+      const layer = document.getElementById('tokens');
+      if(!layer) return;
+      const svgs = {
+        scale: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path d='M32 6v10M12 44h40' stroke='%23000000' stroke-opacity='0.04' stroke-width='2' fill='none'/></svg>`),
+        doc: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 64'><rect x='6' y='10' width='36' height='44' rx='4' fill='%23FFF' stroke='%23000000' stroke-opacity='0.03'/></svg>`),
+        key: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='20' cy='20' r='8' fill='%23E9FBFF' opacity='0.06'/></svg>`),
+        gavel: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect x='8' y='30' width='48' height='12' rx='2' fill='%23FFF6E6' opacity='0.06'/></svg>`)
+      };
+      const items = [
+        {svg:svgs.scale, left:'8%', top:'18%', size:92, dur:9200},
+        {svg:svgs.doc, left:'78%', top:'16%', size:76, dur:11000},
+        {svg:svgs.key, left:'48%', top:'66%', size:72, dur:10000},
+        {svg:svgs.gavel, left:'84%', top:'54%', size:68, dur:12000}
+      ];
+      items.forEach(it=>{
+        const el = document.createElement('div');
+        el.className = 'token';
+        el.style.left = it.left;
+        el.style.top = it.top;
+        el.style.width = it.size + 'px';
+        el.style.height = it.size + 'px';
+        el.style.backgroundImage = `url("data:image/svg+xml;utf8,${it.svg}")`;
+        el.style.animation = `floaty ${it.dur}ms ease-in-out ${Math.random()*1200}ms infinite`;
+        layer.appendChild(el);
+      });
+    })();
+
+    // simple mailto form composer
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const offer = document.getElementById('offer').value.trim();
+      const company = document.getElementById('company').value.trim();
+      const country = document.getElementById('country').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent('Domain Offer - Executor.estate');
+      const body =
+        `Name: ${name}\nEmail: ${email}\nCompany: ${company || '(not provided)'}\nOffer (USD): ${offer}\nCountry: ${country}\nPhone: ${phone || '(not provided)'}\n\nMessage:\n${message}\n\n---\nSent from Executor.estate offer form`;
+
+      window.location.href = `mailto:domain@executor.estate?subject=${subject}&body=${encodeURIComponent(body)}`;
+    }
+    document.getElementById('inquiryForm').addEventListener('submit', handleSubmit);
+
+    // "Make an Offer" quick action scrolls to form
+    document.getElementById('inquireBtn').addEventListener('click', function(e){
+      e.preventDefault();
+      const form = document.getElementById('inquiryForm');
+      form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      setTimeout(()=> document.getElementById('offer').focus(), 300);
+    });
+
+    // subtle ticker animation (loop)
+    (function scrollTicker(){
+      const t = document.getElementById('ticker'); if(!t) return;
+      let pos = 0;
+      function step(){ pos = (pos + 1) % (t.scrollWidth || 1); t.scrollLeft = pos; requestAnimationFrame(step); }
+      setTimeout(()=>requestAnimationFrame(step), 600);
+    })();
+  </script>
+</body>
+</html>
